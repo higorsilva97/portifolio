@@ -1,0 +1,191 @@
+/* Define as configurações gerais da página */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza o cabeçalho e o menu de navegação 
+header {
+  background-color: #333;
+  color: #fff;
+}
+*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+header nav {
+  display:flex; /* define o elemento pai como flex */
+  align-items: center; /* alinha os elementos filhos verticalmente */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+ 
+}
+
+.menufixo{
+  margin-top: 50px;
+}
+
+#logo {
+  margin-right: auto; /* move o logo para a esquerda */
+}
+
+#imglogo{
+  width: 180px;
+  height: 180px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 30px;
+  
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Estiliza a seção Sobre */
+.sobre {
+  padding: 100px;
+
+
+}
+
+.sobre{
+  margin-left: 150px;
+}
+
+.sobre h2 {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.sobre p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#p2 {
+  font-size: 64px;
+  line-height: 1.5;
+  margin:0;
+}
+
+/* Estiliza a seção Trabalhos */
+#trabalhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+
+.trabalho {
+  width: 30%;
+  margin: 10px;
+  width: 700px;
+  height: 700px;
+  text-align: center; 
+}
+
+.trabalho img {
+  width: 100%;
+  height: auto;
+  /*margin-bottom: 10px;*/
+  filter: brightness(100%);
+  transition: filter 0.5s ease;
+  
+}
+
+#img3, #img4{
+  margin-top: -210px;
+}
+.trabalho img:hover {
+  filter: brightness(30%);
+}
+
+.trabalho h2 {
+  font-size: 50px;
+  color: #fff;
+  
+  position:absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.trabalho p {
+  font-size: 1.2em;
+}
+
+.trabalho #img1:hover ~ #titulo1,
+          #img2:hover ~ #titulo2,
+          #img3:hover ~ #titulo3,
+          #img4:hover ~ #titulo4
+          {
+  opacity: 1;
+}
+#titulo2{
+  left: 70%;
+}
+#titulo3{
+  left: 30%;
+  top:  127%
+}
+#titulo4{
+  left: 70%;
+  top: 127%;
+}
+
+
+
+/*trabalho 2 */
+
+
+/*
+.trabalho img:hover + h2{
+  opacity: 1;
+}*/
+
+
+
+
+/* Estiliza o rodapé */
+footer {
+  background-color: #fba4a4;
+  padding: 20px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  align-items: center;
+}
+
+.right {
+  display: flex;
+}
+.right a {
+  margin-left: 10px;
+}
